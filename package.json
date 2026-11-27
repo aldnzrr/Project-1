@@ -1,0 +1,10 @@
+{
+  "name": "dust-la-stella-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dust la Stella — company profile website",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}

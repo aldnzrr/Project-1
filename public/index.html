@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dust la Stella™ — Woven From Stardust</title>
+  <meta name="description" content="Dust la Stella — an independent clothing label from Indonesia. Original cuts, limited editions, made to be worn for years." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+<body>
+  <main id="top">
+    <!-- ================= INTRO: hero + logo 3D yang menempel ================= -->
+    <div class="intro" id="intro">
+      <!-- panggung menempel: logo 3D tetap di layar sementara konten bergulir -->
+      <div class="intro__stage" id="stage">
+        <div class="hero__sky" id="heroSky"></div>
+        <div class="hero__text" id="heroText">
+          <h1 class="display hero__title"><span><span class="w">Woven</span> <span class="w">From</span></span><span><span class="w">Star</span><span class="w">dust</span></span></h1>
+          <p class="hero__sub">An independent clothing label from Indonesia. Original cuts and limited editions — made with intent, built to be worn for years.</p>
+          <a href="#tentang" class="btn btn--blue hero__cta">Get to Know Us</a>
+        </div>
+        <div class="mark__tag label" id="markTag"><span>A Mark</span><span class="pill">That Shines</span></div>
+        <div class="mark__orbit" id="markOrbit">
+          <span class="orbit-word">Comfort</span>
+          <span class="orbit-word">Bold</span>
+          <span class="orbit-word">Lasting</span>
+          <span class="orbit-word">Local</span>
+        </div>
+        <div class="anchor-brand" id="anchorBrand"></div>
+        <div class="mark__brand" id="markBrand">
+          <span class="label mark__l1">[Clean Stitches]</span>
+          <p class="display" id="brandLetters"></p>
+          <span class="label mark__l2">[Soft Fabrics]</span>
+        </div>
+      </div>
+
+      <section class="hero" id="hero" aria-hidden="true"></section>
+      <section class="mark" id="mark" aria-hidden="true"></section>
+    </div>
+
+    <!-- ================= ABOUT + 50/50 ================= -->
+    <section class="about" id="tentang">
+      <div class="about__left">
+        <p class="about__lead reveal">Dust la Stella is a home for <em>original</em> clothing, <em>limited</em> editions, and collaborations. We design every piece ourselves, choose the <em>finest</em> fabrics, and sew them with <em>local</em> hands.</p>
+        <div class="about__item reveal"><p class="label">(01) /Vision</p><p>To make clothes that are worn for years, not just for one season.</p></div>
+        <div class="about__item reveal"><p class="label">(02) /Belief</p><p>Clothing shouldn't just cover the body; it should carry the story of the one who wears it.</p></div>
+      </div>
+      <div class="about__right reveal">
+        <div class="stat stat--a"><b>50<small>%</small></b><span class="label">Chosen Fabrics</span></div>
+        <div class="globe">
+          <svg viewBox="0 0 400 400" class="globe__svg" aria-hidden="true">
+            <circle cx="200" cy="200" r="170" fill="none" stroke="#d6d6d6" stroke-width="1.5"/>
+            <g class="globe__meridians" fill="none" stroke="#dcdcdc" stroke-width="1.2">
+              <ellipse cx="200" cy="200" rx="40" ry="170"/><ellipse cx="200" cy="200" rx="95" ry="170"/><ellipse cx="200" cy="200" rx="140" ry="170"/>
+            </g>
+            <g fill="none" stroke="#dcdcdc" stroke-width="1.2">
+              <ellipse cx="200" cy="200" rx="170" ry="40"/><ellipse cx="200" cy="120" rx="150" ry="28"/><ellipse cx="200" cy="280" rx="150" ry="28"/>
+            </g>
+            <path d="M120 40 L150 40 L150 110" fill="none" stroke="#9a9a9a"/><circle cx="120" cy="40" r="3" fill="#9a9a9a"/>
+            <path d="M150 330 L150 380 L200 380" fill="none" stroke="#9a9a9a"/><circle cx="150" cy="330" r="3" fill="#9a9a9a"/>
+          </svg>
+          <div class="globe__star" id="globeStar"></div>
+          <span class="globe__pill">Dust la Stella</span>
+        </div>
+        <div class="stat stat--b"><b>50<small>%</small></b><span class="label">Original<br/>Design</span></div>
+      </div>
+    </section>
+
+    <!-- ================= AWAL MULA ================= -->
+    <section class="origins" id="awal">
+      <p class="origins__quote reveal">Long before Dust la Stella became a brand, it was a way of seeing the world</p>
+      <div class="origins__body">
+        <p class="origins__side origins__side--l signature">Dust</p>
+        <div class="origins__center">
+          <div class="polaroid reveal">
+            <img src="img/pendiri.png" alt="The founders of Dust la Stella wearing Dust la Stella pieces" />
+            <span class="name-tag name-tag--l">im kemal</span>
+            <span class="name-tag name-tag--r">im stardust</span>
+          </div>
+        </div>
+        <p class="origins__side origins__side--r signature">la Stella</p>
+      </div>
+    </section>
+
+    <!-- ================= PERJALANAN BRAND ================= -->
+    <section class="journey" id="perjalanan">
+      <div class="journey__head">
+        <h2 class="display journey__title"><span>The Brand</span><span>Journey</span></h2>
+        <div class="display journey__num" id="jNum">01</div>
+      </div>
+      <div class="journey__stage">
+        <div class="journey__rule"></div>
+        <div class="journey__cards" id="jCards"></div>
+      </div>
+      <div class="journey__text" id="jText"></div>
+    </section>
+
+    <!-- ================= SHOWCASE (kurva) ================= -->
+    <section class="showcase" id="showcase">
+      <h2 class="display showcase__title reveal"><span>One Standard.</span><span>Every Layer.</span></h2>
+      <div class="showcase__stage" id="showStage">
+        <div class="showcase__track" id="showTrack"></div>
+        <div class="showcase__hero">
+          <img src="img/model-standard.png" alt="Model wearing Dust la Stella" />
+          <span class="showcase__caption">Dust la Stella, worn</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DROP TERBATAS ================= -->
+    <section class="drop" id="drop">
+      <h2 class="display drop__title reveal"><span>Limited</span><span>Drop</span></h2>
+      <div class="drop__points">
+        <div class="point point--1 reveal"><i class="point__icon"></i><p class="label">(01)</p><h3>Unique<br/>Serial Number</h3></div>
+        <div class="point point--3 reveal"><i class="point__icon"></i><p class="label">(03)</p><h3>Never<br/>Restocked</h3></div>
+        <div class="point point--2 reveal"><i class="point__icon"></i><p class="label">(02)</p><h3>Only<br/>200 Pieces</h3></div>
+      </div>
+      <p class="drop__desc reveal">Drop 05 — The "Current" Work Jacket. 12oz canvas, brass buttons, made once and never produced again.</p>
+      <div class="countdown reveal" id="countdown">
+        <div><b id="cdD">00</b><span class="label">Days</span></div>
+        <div><b id="cdH">00</b><span class="label">Hours</span></div>
+        <div><b id="cdM">00</b><span class="label">Minutes</span></div>
+        <div><b id="cdS">00</b><span class="label">Seconds</span></div>
+      </div>
+      <form class="drop__form reveal" id="notifyForm">
+        <input type="email" required placeholder="your@email.com" class="field" />
+        <button class="btn btn--blue" type="submit">Remind Me</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Logo 3D terbang: satu logo yang berpindah dari section ke section -->
+  <div class="flyer" id="flyer"><div class="logo3d" id="logo3d"></div></div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer__top">
+      <p class="footer__motto">Wear it proudly.<br/>Take good care.<br/>Never stop.</p>
+      <div class="footer__contact">
+        <p class="label">Get in touch / Join the newsletter</p>
+        <a href="mailto:hello@dustlastella.com" class="footer__mail">hello@dustlastella.com</a>
+        <form class="footer__news" id="newsForm">
+          <input type="email" required placeholder="Email for 10% off" />
+          <button type="submit">Join →</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__nav">
+      <div><a href="#tentang">About</a><a href="#awal">Founders</a><a href="#perjalanan">Story</a><a href="#drop">Drop</a></div>
+      <a href="#" class="footer__ig">Instagram ↗</a>
+    </div>
+    <div class="footer__logo"><div class="lmark lmark--chrome"></div></div>
+    <div class="footer__mark display">Dust la Stella</div>
+    <div class="footer__bottom"><span>© 2026 Dust la Stella</span><span>All rights reserved</span></div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
